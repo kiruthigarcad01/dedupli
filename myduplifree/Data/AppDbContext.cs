@@ -11,11 +11,13 @@ namespace myduplifree.Data
     public class AppDbContext : DbContext
     {
         // Constructor for AppDbContext that accepts DbContextOptions
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base (options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             // Constructor body is empty in this example
         }
 
-        public DbSet<LoginViewModel> login {get; set;}
+        public DbSet<LoginViewModel> login { get; set; }
+
+        public DbSet<RegisterViewModel> Register { get; set; }
     }
 }

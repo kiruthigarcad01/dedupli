@@ -53,10 +53,43 @@ namespace myduplifree.Controllers
         }
 
 
-public IActionResult Register()
+        [HttpGet]
+        [Route("Home/Register")]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+
+[HttpPost]
+[Route("Home/Register")]
+public IActionResult Register(RegisterViewModel RegisterModel)
+{
+    if (ModelState.IsValid)
     {
-        return View();
+        var Register = new RegisterViewModel
+        {
+            FullName = RegisterModel.FullName,
+            Username = RegisterModel.Username,
+            Email = RegisterModel.Email,
+            PhoneNumber = RegisterModel.PhoneNumber,
+            Password = RegisterModel.Password,
+            // Gender = RegisterModel.Gender, // Assuming you have Gender property in RegisterViewModel
+        };
+
+        _context.Register.Add(Register);
+        _context.SaveChanges();
+
+        // Assuming you want to redirect to the login page after successful registration
+        return RedirectToAction("Login", "Home");
     }
+    else
+    {
+        // If model state is not valid, return the same view with validation errors
+        return View(RegisterModel);
+    }
+}
+
        public IActionResult Users()
     {
         return View();
