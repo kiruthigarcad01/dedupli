@@ -90,10 +90,7 @@ public IActionResult Register(RegisterViewModel RegisterModel)
     }
 }
 
-       public IActionResult Users()
-    {
-        return View();
-    }
+
    public IActionResult Dataholder()
     {
         return View();

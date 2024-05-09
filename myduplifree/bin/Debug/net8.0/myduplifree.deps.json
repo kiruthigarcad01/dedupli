@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "myduplifree/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "5.0.0",
           "Microsoft.Data.SqlClient": "5.2.0",
           "Microsoft.DotNet.Watcher.Tools": "2.0.2",
           "Microsoft.EntityFrameworkCore": "8.0.3",
@@ -591,6 +592,39 @@
         "resources": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.11001.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.0.0": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.0.0"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.11001.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.0.0": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.0.0"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.11001.0"
           }
         }
       },
@@ -2219,6 +2253,27 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Client/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OMTp9ot40TZgZxnFO+S0ac0EY5CtQs6KTHkMSHmNFDc+a0tWMCsSBuOG6HoH9+G95wNhEfZrZ20btAsHMlQe7w==",
+      "path": "microsoft.aspnet.webapi.client/5.0.0",
+      "hashPath": "microsoft.aspnet.webapi.client.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZOVLLtFpSM8nkJopUM9upbJEUkAUS60j6Sj1hDKewHaekWMUnnoMX/i3Ee+7KgxMGk13yxxQRHtSwcjh1JpJ4w==",
+      "path": "microsoft.aspnet.webapi.core/5.0.0",
+      "hashPath": "microsoft.aspnet.webapi.core.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.WebHost/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mvgJ+xoWtDi9RrPFTwicV6xVx1EuNXjLJ19hxXGFHcYdHG3vvr+MI2p1tfN4WUO8SVrug+QHfarkjaucjSzRpw==",
+      "path": "microsoft.aspnet.webapi.webhost/5.0.0",
+      "hashPath": "microsoft.aspnet.webapi.webhost.5.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",

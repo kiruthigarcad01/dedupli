@@ -509,3 +509,6 @@ C:\Users\Hp\Desktop\dedupli\myduplifree\obj\Debug\net8.0\scopedcss\projectbundle
 C:\Users\Hp\Desktop\dedupli\myduplifree\obj\Debug\net8.0\myduplif.557556E4.Up2Date
 C:\Users\Hp\Desktop\dedupli\myduplifree\obj\Debug\net8.0\myduplifree.genruntimeconfig.cache
 C:\Users\Hp\Desktop\dedupli\myduplifree\obj\Debug\net8.0\ref\myduplifree.dll
+C:\Users\Hp\Desktop\dedupli\myduplifree\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\Hp\Desktop\dedupli\myduplifree\bin\Debug\net8.0\System.Web.Http.dll
+C:\Users\Hp\Desktop\dedupli\myduplifree\bin\Debug\net8.0\System.Web.Http.WebHost.dll

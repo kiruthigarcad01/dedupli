@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "A5U/gi7eVRBn0nep6nczatFApjBlVtCXC6jEHd+0MA0=",
+  "Hash": "Wca+M6eZB97W+v9vPm8v85vLo80PwIDXWv83SWx/fUw=",
   "Source": "myduplifree",
   "BasePath": "_content/myduplifree",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Hp\\Desktop\\dedupli\\myduplifree\\wwwroot\\images\\rose.jpg",
+      "SourceId": "myduplifree",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hp\\Desktop\\dedupli\\myduplifree\\wwwroot\\",
+      "BasePath": "_content/myduplifree",
+      "RelativePath": "images/rose.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\rose.jpg"
     },
     {
       "Identity": "C:\\Users\\Hp\\Desktop\\dedupli\\myduplifree\\wwwroot\\js\\fontawesome.js",

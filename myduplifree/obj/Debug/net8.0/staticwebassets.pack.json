@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\images\\1.jpg"
     },
     {
+      "Id": "C:\\Users\\Hp\\Desktop\\dedupli\\myduplifree\\wwwroot\\images\\rose.jpg",
+      "PackagePath": "staticwebassets\\images\\rose.jpg"
+    },
+    {
       "Id": "C:\\Users\\Hp\\Desktop\\dedupli\\myduplifree\\wwwroot\\js\\fontawesome.js",
       "PackagePath": "staticwebassets\\js\\fontawesome.js"
     },
