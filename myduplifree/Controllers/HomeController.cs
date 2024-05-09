@@ -1,84 +1,59 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using myduplifree.Data;
 using myduplifree.Models;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
-namespace myduplifree.Controllers;
-
-public class HomeController(ILogger<HomeController> logger) : Controller
+namespace myduplifree.Controllers
 {
-    private readonly ILogger<HomeController> _logger = logger;
+    public class HomeController : Controller
+    {
+        private readonly AppDbContext _context;
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    [HttpGet]
-    [Route("Home/Login")]
-    public IActionResult Login()
-    {
-        return View();
-    }
-   
-    [HttpPost]
-[Route("Home/Login")]
-public IActionResult Login(LoginViewModel loginModel)
-{
-    if (ModelState.IsValid)
-    {
-        if (loginModel.Username != null && loginModel.Password != null)
+        public HomeController(AppDbContext context)
         {
-            _logger.LogInformation(loginModel.Username + " " + loginModel.Password);
+            _context = context;
+        }
 
-            var user = DbContext.Users.FirstOrDefault(u => u.Username == loginModel.Username && u.Password == loginModel.Password);
+        public IActionResult Index()
+        {
+            return View();
+        }
 
-            if (user != null)
+        [HttpGet]
+        [Route("Home/Login")]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Route("Home/Login")]
+        public IActionResult Login(LoginViewModel loginModel)
+        {
+            if (ModelState.IsValid)
             {
-                if (loginModel.Username == "Admin")
+                var logindb = new LoginViewModel
                 {
-                    return RedirectToAction("Dashboard", "Admin");
-                }
-                else
-                {
-                    return RedirectToAction("Dashboard", "Home");
-                }
+                    Username = loginModel.Username,
+                    Password = loginModel.Password,
+                };
+
+                _context.login.Add(logindb);
+                _context.SaveChanges();
+
+                return View();
             }
-            
             else
             {
-                ModelState.AddModelError(string.Empty, "Invalid username or password.");
+                return View(loginModel);
             }
         }
-        else
-        {
-            ModelState.AddModelError(string.Empty, "Username or password is null.");
-        }
-    }
-    else
-    {
-        return View(loginModel);
-    }
 
-    return View(loginModel);
-}
 
-//     private bool IsUserAuthenticated(string username, string password)
-// {
-//     // Implement your authentication logic here
-//     // For demonstration purposes, let's assume a simple hardcoded check
-//     if (username == "admin" && password == "password")
-//     {
-//         return true; // Authentication successful
-//     }
-//     else
-//     {
-//         return false; // Authentication failed
-//     }
-// }
-
-    public IActionResult Register()
+public IActionResult Register()
     {
         return View();
     }
@@ -95,4 +70,11 @@ public IActionResult Login(LoginViewModel loginModel)
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+
+
+
+    }
 }
+
+
