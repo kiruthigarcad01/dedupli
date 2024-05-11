@@ -90,18 +90,44 @@ public IActionResult Register(RegisterViewModel RegisterModel)
     }
 }
 
+ 
 
+[HttpGet]
+[Route("Home/DataHolder")]
    public IActionResult Dataholder()
     {
         return View();
     }
+
+    [HttpPost]
+[Route("Home/Dataholder")]
+public IActionResult Create(DataholderViewModel DataholderModel)
+{
+    if (ModelState.IsValid)
+    {
+        var Dataholder = new DataholderViewModel
+        {
+            Name = DataholderModel.Name,
+	        Rownumber = DataholderModel.Rownumber,
+            // Add other properties as needed
+        };
+
+        _context.Dataholder.Add(Dataholder);
+        _context.SaveChanges();
+
+        return RedirectToAction("Login", "Home"); 
+    }
+    else
+    {
+        return View(DataholderModel);
+    }
+}
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-
-
 
 
     }

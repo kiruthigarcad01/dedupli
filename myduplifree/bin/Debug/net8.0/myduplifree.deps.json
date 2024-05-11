@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "myduplifree/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNet.WebApi.WebHost": "5.0.0",
+          "Microsoft.AspNet.WebApi.Core": "5.2.7",
+          "Microsoft.AspNet.WebApi.WebHost": "5.2.7",
           "Microsoft.Data.SqlClient": "5.2.0",
           "Microsoft.DotNet.Watcher.Tools": "2.0.2",
           "Microsoft.EntityFrameworkCore": "8.0.3",
@@ -595,36 +596,37 @@
           }
         }
       },
-      "Microsoft.AspNet.WebApi.Client/5.0.0": {
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "Newtonsoft.Json.Bson": "1.0.1"
         },
         "runtime": {
-          "lib/net45/System.Net.Http.Formatting.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.11001.0"
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
           }
         }
       },
-      "Microsoft.AspNet.WebApi.Core/5.0.0": {
+      "Microsoft.AspNet.WebApi.Core/5.2.7": {
         "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.0.0"
+          "Microsoft.AspNet.WebApi.Client": "5.2.7"
         },
         "runtime": {
           "lib/net45/System.Web.Http.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.11001.0"
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
           }
         }
       },
-      "Microsoft.AspNet.WebApi.WebHost/5.0.0": {
+      "Microsoft.AspNet.WebApi.WebHost/5.2.7": {
         "dependencies": {
-          "Microsoft.AspNet.WebApi.Core": "5.0.0"
+          "Microsoft.AspNet.WebApi.Core": "5.2.7"
         },
         "runtime": {
           "lib/net45/System.Web.Http.WebHost.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.11001.0"
+            "assemblyVersion": "5.2.7.0",
+            "fileVersion": "5.2.61128.0"
           }
         }
       },
@@ -1580,6 +1582,18 @@
           }
         }
       },
+      "Newtonsoft.Json.Bson/1.0.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.1",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.20722"
+          }
+        }
+      },
       "NuGet.Common/6.9.1": {
         "dependencies": {
           "NuGet.Frameworks": "6.9.1"
@@ -2254,26 +2268,26 @@
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebApi.Client/5.0.0": {
+    "Microsoft.AspNet.WebApi.Client/5.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OMTp9ot40TZgZxnFO+S0ac0EY5CtQs6KTHkMSHmNFDc+a0tWMCsSBuOG6HoH9+G95wNhEfZrZ20btAsHMlQe7w==",
-      "path": "microsoft.aspnet.webapi.client/5.0.0",
-      "hashPath": "microsoft.aspnet.webapi.client.5.0.0.nupkg.sha512"
+      "sha512": "sha512-/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
+      "path": "microsoft.aspnet.webapi.client/5.2.7",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebApi.Core/5.0.0": {
+    "Microsoft.AspNet.WebApi.Core/5.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZOVLLtFpSM8nkJopUM9upbJEUkAUS60j6Sj1hDKewHaekWMUnnoMX/i3Ee+7KgxMGk13yxxQRHtSwcjh1JpJ4w==",
-      "path": "microsoft.aspnet.webapi.core/5.0.0",
-      "hashPath": "microsoft.aspnet.webapi.core.5.0.0.nupkg.sha512"
+      "sha512": "sha512-gM2QzApnHdy1FbKUJ/ROGJSm69P2G+HMoVd/t5Vq1O/zZ5TI4IKC9PX6nUfRt/NHgebZOIWHpB4/4K4inuy4yQ==",
+      "path": "microsoft.aspnet.webapi.core/5.2.7",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512"
     },
-    "Microsoft.AspNet.WebApi.WebHost/5.0.0": {
+    "Microsoft.AspNet.WebApi.WebHost/5.2.7": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mvgJ+xoWtDi9RrPFTwicV6xVx1EuNXjLJ19hxXGFHcYdHG3vvr+MI2p1tfN4WUO8SVrug+QHfarkjaucjSzRpw==",
-      "path": "microsoft.aspnet.webapi.webhost/5.0.0",
-      "hashPath": "microsoft.aspnet.webapi.webhost.5.0.0.nupkg.sha512"
+      "sha512": "sha512-m3TyD7R/cmbfXqkfgcnE0J/UEKklcPP5gsXR96//vLx2kTnsxuOqNlulJLl+Oto4fZMvhVPFZVR+KG9cLZM/PA==",
+      "path": "microsoft.aspnet.webapi.webhost/5.2.7",
+      "hashPath": "microsoft.aspnet.webapi.webhost.5.2.7.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Language/6.0.24": {
       "type": "package",
@@ -2722,6 +2736,13 @@
       "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json.Bson/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
+      "path": "newtonsoft.json.bson/1.0.1",
+      "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
     },
     "NuGet.Common/6.9.1": {
       "type": "package",

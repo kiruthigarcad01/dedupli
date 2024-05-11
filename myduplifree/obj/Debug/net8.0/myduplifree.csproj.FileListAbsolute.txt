@@ -512,3 +512,4 @@ C:\Users\Hp\Desktop\dedupli\myduplifree\obj\Debug\net8.0\ref\myduplifree.dll
 C:\Users\Hp\Desktop\dedupli\myduplifree\bin\Debug\net8.0\System.Net.Http.Formatting.dll
 C:\Users\Hp\Desktop\dedupli\myduplifree\bin\Debug\net8.0\System.Web.Http.dll
 C:\Users\Hp\Desktop\dedupli\myduplifree\bin\Debug\net8.0\System.Web.Http.WebHost.dll
+C:\Users\Hp\Desktop\dedupli\myduplifree\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

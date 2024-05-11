@@ -19,5 +19,7 @@ namespace myduplifree.Data
         public DbSet<LoginViewModel> login { get; set; }
 
         public DbSet<RegisterViewModel> Register { get; set; }
+
+        public DbSet<DataholderViewModel> Dataholder { get; set; }
     }
 }

@@ -43,9 +43,13 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNet.WebApi.WebHost": {
               "target": "Package",
-              "version": "[4.6.2, )"
+              "version": "[5.2.7, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
