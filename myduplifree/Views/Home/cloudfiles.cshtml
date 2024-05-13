@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "cloudfiles Page";
+    
+    // Replace this with actual data from your database
+    @* List<cloudfiles> files = new List<cloudfiles>
+    {
+        new cloudfiles { FileName = "ExampleFile.txt", FileLocation = "/path/to/file", Publickey = "abc123def456", Updatedto = DateTime.Parse("2024-05-13 10:30:00"), Youarein = "Some text here" },
+        new cloudfiles { FileName = "AnotherFile.docx", FileLocation = "/another/path", Publickey = "xyz789uvw123", Updatedto = DateTime.Parse("2024-05-14 12:45:00"), Youarein = "More text here" }
+        // Add more CloudFile objects as needed
+    }; *@
+}
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>FileName</th>
+            <th>FileLocation</th>
+            <th>Publickey</th>
+            <th>Updatedto</th>
+            <th>Youarein</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var file in cloudfiles)
+        {
+            <tr>
+                <td>@file.FileName</td>
+                <td>@file.FileLocation</td>
+                <td>@file.Publickey</td>
+                <td>@file.Updatedto.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                <td>@file.Youarein</td>
+                <td>
+                    <!-- Form within table cell -->
+                    <form action="cloudfiles" method="post">
+                        <input type="hidden" name="fileId" value="@file.Id">
+                        <button type="submit" class="btn btn-primary">Process</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Hp\Desktop\dedupli\myduplifree
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Hp/Desktop/dedupli/myduplifree/Views/Home/cloudfiles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjbG91ZGZpbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hp/Desktop/dedupli/myduplifree/Views/Home/Dataholder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXRhaG9sZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,10 +44,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Hp/Desktop/dedupli/myduplifree/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Hp/Desktop/dedupli/myduplifree/Views/Home/Uploadfile/Uploadfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGxvYWRmaWxlXFVwbG9hZGZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Hp/Desktop/dedupli/myduplifree/Views/Shared/Error.cshtml]

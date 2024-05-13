@@ -44,7 +44,7 @@ namespace myduplifree.Controllers
                 _context.login.Add(logindb);
                 _context.SaveChanges();
 
-                return View();
+                return View("Dataholder", "Home");
             }
             else
             {
@@ -122,6 +122,56 @@ public IActionResult Create(DataholderViewModel DataholderModel)
         return View(DataholderModel);
     }
 }
+
+[HttpGet]
+[Route("Home/cloudfiles")]
+
+public IActionResult CloudFiles()
+{
+    // Assuming you have logic to retrieve cloud files from your database
+    List<cloudfilesViewModel> cloudFiles = GetcloudfilesFromDatabase();
+
+    // Pass the cloud files data to the view
+    return View(cloudFiles);
+}
+
+        private List<cloudfilesViewModel> GetcloudfilesFromDatabase()
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPost]
+[Route("Home/cloudfiles")]
+
+public IActionResult cloudfiles(cloudfilesViewModel cloudfilesModel)
+{
+    if (ModelState.IsValid)
+    {
+        var cloudfiles = new cloudfilesViewModel
+        {
+            FileName = cloudfilesModel.FileName,
+            FileLocation = cloudfilesModel. FileLocation,
+            Publickey = cloudfilesModel.Publickey,
+            Updatedto = cloudfilesModel.Updatedto,
+            Youarein =cloudfilesModel. Youarein,
+           
+        };
+
+        _context.cloudfiles.Add(cloudfiles);
+        _context.SaveChanges();
+
+        // Assuming you want to redirect to the login page after successful registration
+        return RedirectToAction("Dataholder", "Home");
+    }
+   else
+{
+    // If model state is not valid, return the same view without passing a model
+    return View();
+}
+}
+
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
