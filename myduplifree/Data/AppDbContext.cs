@@ -22,7 +22,7 @@ namespace myduplifree.Data
 
         public DbSet<DataholderViewModel> Dataholder { get; set; }
 
-        public DbSet<cloudfilesViewModel> cloudfiles { get; set; }
+  
         
         // public DbSet<UploadfileViewModel> Uploadfile { get; set; }
     }

@@ -123,52 +123,49 @@ public IActionResult Create(DataholderViewModel DataholderModel)
     }
 }
 
-[HttpGet]
-[Route("Home/cloudfiles")]
+// [HttpGet]
+// [Route("Home/cloudfiles")]
+// public IActionResult cloudfiles()
+// {
+//     // Retrieve cloud files from the database
+//     List<cloudfilesViewModel> cloudfiles = _context.cloudfiles.ToList();
 
-public IActionResult CloudFiles()
-{
-    // Assuming you have logic to retrieve cloud files from your database
-    List<cloudfilesViewModel> cloudFiles = GetcloudfilesFromDatabase();
+//     // Pass the cloud files data to the view
+//     return View(cloudfiles);
+// }
+// [HttpPost]
+// [Route("Home/cloudfiles")]
+// public async Task<IActionResult> cloudfilesAsync(cloudfilesViewModel cloudfilesModel)
+// {
+//     if (ModelState.IsValid)
+//     {
+//         var cloudfiles = new cloudfilesViewModel
+//         {
+//             FileName = cloudfilesModel.FileName,
+//             FileLocation = cloudfilesModel.FileLocation,
+//             Publickey = cloudfilesModel.Publickey,
+//             Updatedto = cloudfilesModel.Updatedto,
+//             Youarein = cloudfilesModel.Youarein,
+//             // Assuming you have a property for FileData in your view model
+//             // FileData = cloudfilesModel.FileData
+//         };
 
-    // Pass the cloud files data to the view
-    return View(cloudFiles);
-}
+//         _context.cloudfiles.Add(cloudfiles);
+//         await _context.SaveChangesAsync();
 
-        private List<cloudfilesViewModel> GetcloudfilesFromDatabase()
+//         // Redirect to the action method that displays the cloud files
+//         return RedirectToAction("cloudfiles", "Home");
+//     }
+
+//     // If model state is not valid, return the same view with validation errors
+//     return View(cloudfilesModel);
+// }
+
+
+  public IActionResult KGC()
         {
-            throw new NotImplementedException();
+            return View();
         }
-
-        [HttpPost]
-[Route("Home/cloudfiles")]
-
-public IActionResult cloudfiles(cloudfilesViewModel cloudfilesModel)
-{
-    if (ModelState.IsValid)
-    {
-        var cloudfiles = new cloudfilesViewModel
-        {
-            FileName = cloudfilesModel.FileName,
-            FileLocation = cloudfilesModel. FileLocation,
-            Publickey = cloudfilesModel.Publickey,
-            Updatedto = cloudfilesModel.Updatedto,
-            Youarein =cloudfilesModel. Youarein,
-           
-        };
-
-        _context.cloudfiles.Add(cloudfiles);
-        _context.SaveChanges();
-
-        // Assuming you want to redirect to the login page after successful registration
-        return RedirectToAction("Dataholder", "Home");
-    }
-   else
-{
-    // If model state is not valid, return the same view without passing a model
-    return View();
-}
-}
 
 
 
