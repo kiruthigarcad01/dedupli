@@ -1,5 +1,7 @@
 using System.Diagnostics;
+using kGC.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using myduplifree.Data;
@@ -123,50 +125,97 @@ public IActionResult Create(DataholderViewModel DataholderModel)
     }
 }
 
-// [HttpGet]
-// [Route("Home/cloudfiles")]
-// public IActionResult cloudfiles()
-// {
-//     // Retrieve cloud files from the database
-//     List<cloudfilesViewModel> cloudfiles = _context.cloudfiles.ToList();
-
-//     // Pass the cloud files data to the view
-//     return View(cloudfiles);
-// }
-// [HttpPost]
-// [Route("Home/cloudfiles")]
-// public async Task<IActionResult> cloudfilesAsync(cloudfilesViewModel cloudfilesModel)
-// {
-//     if (ModelState.IsValid)
-//     {
-//         var cloudfiles = new cloudfilesViewModel
-//         {
-//             FileName = cloudfilesModel.FileName,
-//             FileLocation = cloudfilesModel.FileLocation,
-//             Publickey = cloudfilesModel.Publickey,
-//             Updatedto = cloudfilesModel.Updatedto,
-//             Youarein = cloudfilesModel.Youarein,
-//             // Assuming you have a property for FileData in your view model
-//             // FileData = cloudfilesModel.FileData
-//         };
-
-//         _context.cloudfiles.Add(cloudfiles);
-//         await _context.SaveChangesAsync();
-
-//         // Redirect to the action method that displays the cloud files
-//         return RedirectToAction("cloudfiles", "Home");
-//     }
-
-//     // If model state is not valid, return the same view with validation errors
-//     return View(cloudfilesModel);
-// }
-
-
-  public IActionResult KGC()
+[HttpGet]
+        [Route("Home/cloudfiles")]
+        public IActionResult Cloudfiles()
         {
             return View();
         }
 
+        [HttpPost]
+        [Route("Home/cloudfiles")]
+        public async Task<IActionResult> Cloudfiles(cloudfilesViewModel cloudfiles)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var cloudfiletype = new cloudfilesViewModel
+                    {
+                        Username = cloudfiles.Username,
+                        Email = cloudfiles.Email,
+                        PhoneNumber = cloudfiles.PhoneNumber,
+                        CSP = cloudfiles.CSP,
+                        Generate_Keys = cloudfiles.Generate_Keys
+                    };
+
+                    _context.cloudfiles.Add(cloudfiletype);
+                    await _context.SaveChangesAsync();
+
+                    ILogger.LogInformation("Dataholder record has been added to the table");
+
+                    return RedirectToAction("KGC", "Home");
+                }
+                catch (DbUpdateException ex)
+                {
+                    _logger.LogError(ex, "An error occurred while saving the entity changes.");
+                    ModelState.AddModelError(string.Empty, "An error occurred while saving the data. Please try again.");
+
+                    // Corrected the method call to use proper view and controller names
+                    return RedirectToAction("Register", "Home", cloudfiles);
+                }
+            }
+            else
+            {
+                return View("Register");
+            }
+        }
+
+        [HttpGet]
+        [Route("Home/KGC")]
+        public IActionResult KGC()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [Route("Home/KGC")]
+        public async Task<IActionResult> KGC(KGCViewModel KGC)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var KGCtype = new KGCViewModel
+                    {
+                        FileName = KGC.FileName,
+                        FileLocation = KGC.FileLocation,
+                        Publickey = KGC.Publickey,
+                        Updatedto = KGC.Updatedto,
+                        Youarein = KGC.Youarein
+                    };
+
+                    _context.KGC.Add(KGCtype);
+                    await _context.SaveChangesAsync();
+
+                    _logger.LogInformation("Dataholder record has been opened");
+
+                    return RedirectToAction("KGC");
+                }
+                catch (DbUpdateException ex)
+                {
+                    _logger.LogError(ex, "An error occurred while saving the entity changes.");
+                    ModelState.AddModelError(string.Empty, "An error occurred while saving the data. Please try again.");
+
+                    // Corrected the method call to use proper view and controller names
+                    return RedirectToAction("KGC");
+                }
+            }
+            else
+            {
+                return View("Register");
+            }
+        }
 
 
 

@@ -6,85 +6,65 @@
 }
 
 
-<div class="w3l-signinform">
-    <!-- container -->
-    <div class="wrapper row">
-        <!-- main content -->
-            
-          
-                <div class="col-md-6">   
-                            <h1>KGC </h1>
-               
-                            <table class="table ">
-                            <thead class="text-white">
-                                <tr>
-                                <th>Username</th>
-                                <th>Email</th>
-                                <th>PhoneNumber</th>
-                                <th>CSP</th>
-                                <th>Generate_Keys</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-warning">
-
-                                @foreach (var KGC in Model)
-                               {
-                                <tr>
-                                <td>@KGC.Username</td>
-                                <td>@KGC.Email</td>
-                                <td>@KGC.PhoneNumber</td>
-                                <td>@KGC.CSP</td>
-                                @* <td><img src="@course.trainer_name" width="50px"  alt=""></td> *@
-                                
-                                
-                                </tr>
-                                }
-                            </tbody>
-                            </table>
-
-                        </div>
-
-                        <div class="w3l-form-info col-md-6">
-                            <div class="w3_info">
-                                <h1>Cloud Files</h1>
-                                  <h2>KGC</h2>
-                                <form action="@Url.Action("AddCourseIn", "Admin")" method="post">
-                                    <div class="input-group">
-                                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                                        <input type="text" name="Username" placeholder="Username" required="">
-                                    </div>
-                                    <div class="input-group">
-                                        <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                                        <input type="text" name="Email" placeholder="Email" required="">
-                                    </div>
-                                    <div class="input-group">
-                                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                                        <input type="text" name="PhoneNumber" placeholder="PhoneNumber" required="">
-                                    </div>
-                                    <div class="input-group">
-                                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                        <input type="text" name="CSP" placeholder="CSP" required="">
-                                    </div>
-					<div class="input-group">
-                                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                        <input type="text" name="Generate_Keys" placeholder="Generate_Keys" required="">
-                                    </div>
-				
-
-                                    <button class="btn btn-primary btn-block" type="submit">Add Course</button>
-                                </form>
-                            
-                            </div>
-                        </div>
-
-
-        <!-- //main content -->
+<div class="container">
+        <h1>Cloud Files Form</h1>
+        
+        @using (Html.BeginForm("KGC", "Home", FormMethod.Post, new { @class = "row g-3" }))
+        {
+            <table class="table">
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.FileName, htmlAttributes: new { @class = "form-label" })
+                        @Html.ValidationMessageFor(model => model.FileName, "", new { @class = "text-danger" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.FileName, new { @class = "form-control" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.FileLocation, htmlAttributes: new { @class = "form-label" })
+                        @Html.ValidationMessageFor(model => model.FileLocation, "", new { @class = "text-danger" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.FileLocation, new { @class = "form-control" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.Publickey, htmlAttributes: new { @class = "form-label" })
+                        @Html.ValidationMessageFor(model => model.Publickey, "", new { @class = "text-danger" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.Publickey, new { @class = "form-control" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.Updatedto, htmlAttributes: new { @class = "form-label" })
+                        @Html.ValidationMessageFor(model => model.Updatedto, "", new { @class = "text-danger" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.Updatedto, new { @class = "form-control" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model => model.Youarein, htmlAttributes: new { @class = "form-label" })
+                        @Html.ValidationMessageFor(model => model.Youarein, "", new { @class = "text-danger" })
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model => model.Youarein, new { @class = "form-control" }) <!-- Assuming Generate_Keys is a boolean property -->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        }
     </div>
-    <!-- //container -->
-    <!-- footer -->
-    <div class="footer">
-        <p>&copy; 2021 Gathering Log In form. All Rights Reserved | Design by <a href="https://w3layouts.com/"
-                target="blank">W3layouts</a></p>
-    </div>
-    <!-- footer -->
-</div>
+
+
+

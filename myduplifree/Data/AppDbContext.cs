@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using kGC.Models;
 using Microsoft.EntityFrameworkCore;
 using myduplifree.Models;
 
@@ -21,9 +22,16 @@ namespace myduplifree.Data
         public DbSet<RegisterViewModel> Register { get; set; }
 
         public DbSet<DataholderViewModel> Dataholder { get; set; }
+         public DbSet <cloudfilesViewModel> cloudfiles { get; set; }
+         public DbSet<KGCViewModel> KGC { get; set; }
+
 
   
         
         // public DbSet<UploadfileViewModel> Uploadfile { get; set; }
+    }
+
+    public class cloudfilesViewModel
+    {
     }
 }

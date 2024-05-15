@@ -1,22 +1,19 @@
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace myduplifree.Models;
-
-public class KGCViewModel
-
+namespace kGC.Models
 {
-    public string? Username { get; set; }
-    public string? Email { get; set; }
-
-    public string? PhoneNumber { get; set; }
-
-    public string? CSP { get; set; }
-
-    [Key]
-
-
-    public string? Generate_Keys { get; set; }
-
-
-    // public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    public class KGCViewModel
+    {
+        [Key]
+        public int? Id { get; set; }
+         public string? FileName { get; set; }
+          public string? FileLocation { get; set; }
+           public string? Publickey { get; set; }
+            public DateTime? Updatedto { get; set; }
+               public int? Youarein { get; set; }
+    }
 }
