@@ -1,70 +1,38 @@
-@model List<myduplifree.Models.KGCModel>
+@model List<myduplifree.Models.KGCViewModel>
 
 @{
     ViewData["Title"]="KGC Page";
    
 }
 
+ 
+                            <h1>Course List </h1>
+               
+                            <table class="table ">
+                            <thead class="text-white">
+                                <tr>
+                                <th></th>
+                                <th>Course Name</th>
+                                <th>Course Duration</th>
+                                <th>Course Description</th>
+                                <th>Trainer Name</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-warning">
 
-<div class="container">
-        <h1>Cloud Files Form</h1>
-        
-        @using (Html.BeginForm("KGC", "Home", FormMethod.Post, new { @class = "row g-3" }))
-        {
-            <table class="table">
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.FileName, htmlAttributes: new { @class = "form-label" })
-                        @Html.ValidationMessageFor(model => model.FileName, "", new { @class = "text-danger" })
-                    </td>
-                    <td>
-                        @Html.TextBoxFor(model => model.FileName, new { @class = "form-control" })
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.FileLocation, htmlAttributes: new { @class = "form-label" })
-                        @Html.ValidationMessageFor(model => model.FileLocation, "", new { @class = "text-danger" })
-                    </td>
-                    <td>
-                        @Html.TextBoxFor(model => model.FileLocation, new { @class = "form-control" })
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.Publickey, htmlAttributes: new { @class = "form-label" })
-                        @Html.ValidationMessageFor(model => model.Publickey, "", new { @class = "text-danger" })
-                    </td>
-                    <td>
-                        @Html.TextBoxFor(model => model.Publickey, new { @class = "form-control" })
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.Updatedto, htmlAttributes: new { @class = "form-label" })
-                        @Html.ValidationMessageFor(model => model.Updatedto, "", new { @class = "text-danger" })
-                    </td>
-                    <td>
-                        @Html.TextBoxFor(model => model.Updatedto, new { @class = "form-control" })
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        @Html.LabelFor(model => model.Youarein, htmlAttributes: new { @class = "form-label" })
-                        @Html.ValidationMessageFor(model => model.Youarein, "", new { @class = "text-danger" })
-                    </td>
-                    <td>
-                        @Html.TextBoxFor(model => model.Youarein, new { @class = "form-control" }) <!-- Assuming Generate_Keys is a boolean property -->
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </td>
-                </tr>
-            </table>
-        }
-    </div>
-
-
+                                @foreach (var KGC in Model)
+                               {
+                                <tr>
+                                <td>@KGC.FileName</td>
+                                <td>@KGC.FileLocation</td>
+                                <td>@KGC.Publickey</td>
+                                <td>@KGC.Updatedto</td>
+                                <td>@KGC.Youarein</td>
+                                @* <td><img src="@course.trainer_name" width="50px"  alt=""></td> *@
+                                
+                                
+                                </tr>
+                                }
+                            </tbody>
+                            </table>
 

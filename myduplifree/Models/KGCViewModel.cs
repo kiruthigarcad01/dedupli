@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace kGC.Models
+namespace myduplifree.Models
 {
     public class KGCViewModel
     {

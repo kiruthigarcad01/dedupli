@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using kGC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +13,13 @@ namespace myduplifree.Controllers
     {
         private readonly AppDbContext _context;
 
-        public HomeController(AppDbContext context)
+         private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger,AppDbContext context)
         {
             _context = context;
+             _logger = logger;
+        
         }
 
         public IActionResult Index()
@@ -134,13 +137,13 @@ public IActionResult Create(DataholderViewModel DataholderModel)
 
         [HttpPost]
         [Route("Home/cloudfiles")]
-        public async Task<IActionResult> Cloudfiles(cloudfilesViewModel cloudfiles)
+        public async Task<IActionResult> Cloudfiles(Models.cloudfilesViewModel cloudfiles)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    var cloudfiletype = new cloudfilesViewModel
+                    var cloudfiletype = new Models.cloudfilesViewModel
                     {
                         Username = cloudfiles.Username,
                         Email = cloudfiles.Email,
@@ -152,7 +155,7 @@ public IActionResult Create(DataholderViewModel DataholderModel)
                     _context.cloudfiles.Add(cloudfiletype);
                     await _context.SaveChangesAsync();
 
-                    ILogger.LogInformation("Dataholder record has been added to the table");
+                    _logger.LogInformation("Dataholder record has been added to the table");
 
                     return RedirectToAction("KGC", "Home");
                 }
