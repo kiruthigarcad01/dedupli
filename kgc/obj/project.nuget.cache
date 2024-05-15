@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PGK9ZEKrxrYUIDMNK6LvNisd/fLjdCgrNfr2/iPEppNbC3XEoCHYYt/RpIuf0b2+f3JERD15LBcLtb/i82j1HA==",
+  "dgSpecHash": "xvFAUlm0EX5zswyM4BzwYE1FDPimJ92yt0I3VTY9NQ1uw+EOUwqsh34ddmXsHmsLdwJgB1Dcb1lUZvOQisO8Ig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Hp\\Desktop\\kgc\\kgc.csproj",
+  "projectFilePath": "C:\\Users\\Hp\\Desktop\\dedupli\\kgc\\kgc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

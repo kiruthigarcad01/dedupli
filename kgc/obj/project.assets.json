@@ -7612,11 +7612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\kgc\\kgc.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\Desktop\\dedupli\\kgc\\kgc.csproj",
       "projectName": "kgc",
-      "projectPath": "C:\\Users\\Hp\\Desktop\\kgc\\kgc.csproj",
+      "projectPath": "C:\\Users\\Hp\\Desktop\\dedupli\\kgc\\kgc.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Desktop\\kgc\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\Desktop\\dedupli\\kgc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
