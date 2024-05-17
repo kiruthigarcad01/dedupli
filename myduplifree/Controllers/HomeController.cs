@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Build.Framework;
+// using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using myduplifree.Data;
@@ -128,61 +128,66 @@ public IActionResult Create(DataholderViewModel DataholderModel)
     }
 }
 
-[HttpGet]
-        [Route("Home/cloudfiles")]
-        public IActionResult Cloudfiles()
-        {
-            return View();
-        }
+// [HttpGet]
+// [Route("Home/cloudfiles")]
+public IActionResult Cloudfile()
+{
+    return View();
+}
 
-        [HttpPost]
-        [Route("Home/cloudfiles")]
-        public async Task<IActionResult> Cloudfiles(Models.cloudfilesViewModel cloudfiles)
+    [HttpPost]
+    [Route("Home/cloudfile")]
+    public async Task<IActionResult> Cloudfiles(Models.cloudfilesViewModel cloudfiles)
+    {
+        if (ModelState.IsValid)
         {
-            if (ModelState.IsValid)
+            try
             {
-                try
+                var cloudfiletype = new Models.cloudfilesViewModel
                 {
-                    var cloudfiletype = new Models.cloudfilesViewModel
-                    {
-                        Username = cloudfiles.Username,
-                        Email = cloudfiles.Email,
-                        PhoneNumber = cloudfiles.PhoneNumber,
-                        CSP = cloudfiles.CSP,
-                        Generate_Keys = cloudfiles.Generate_Keys
-                    };
+                    Username = cloudfiles.Username,
+                    Email = cloudfiles.Email,
+                    PhoneNumber = cloudfiles.PhoneNumber,
+                    CSP = cloudfiles.CSP,
+                    Generate_Keys = cloudfiles.Generate_Keys
+                };
 
-                    _context.cloudfiles.Add(cloudfiletype);
-                    await _context.SaveChangesAsync();
+                _context.cloudfiles.Add(cloudfiletype);
+                await _context.SaveChangesAsync();
 
-                    _logger.LogInformation("Dataholder record has been added to the table");
+                _logger.LogInformation("Dataholder record has been added to the table");
 
-                    return RedirectToAction("KGC", "Home");
-                }
-                catch (DbUpdateException ex)
-                {
-                    _logger.LogError(ex, "An error occurred while saving the entity changes.");
-                    ModelState.AddModelError(string.Empty, "An error occurred while saving the data. Please try again.");
-
-                    // Corrected the method call to use proper view and controller names
-                    return RedirectToAction("Register", "Home", cloudfiles);
-                }
+                return RedirectToAction("KGC", "Home");
             }
-            else
+            catch (DbUpdateException ex)
             {
-                return View("Register");
+                _logger.LogError(ex, "An error occurred while saving the entity changes.");
+                ModelState.AddModelError(string.Empty, "An error occurred while saving the data. Please try again.");
+
+                // Corrected the method call to use proper view and controller names
+                return RedirectToAction("Register", "Home", cloudfiles);
             }
         }
-
-        [HttpGet]
-        [Route("Home/KGC")]
-        public IActionResult KGC()
+        else
         {
-            return View();
+            return View("Register");
         }
+    }
 
-        [HttpPost]
-        [Route("Home/KGC")]
+       [HttpGet]
+    public IActionResult KGC()
+    {
+        // Replace this with actual data retrieval logic
+        var model = new List<KGCViewModel>
+        {
+            new KGCViewModel { FileName = "Course1", FileLocation = "Location1", Publickey = "Key1", Updatedto = DateTime.Now, Youarein = 1 },
+            new KGCViewModel { FileName = "Course2", FileLocation = "Location2", Publickey = "Key2", Updatedto = DateTime.Now, Youarein = 2 }
+        };
+
+        return View(model);
+    }
+ [HttpPost]
+        // [Route("Home/KGC")]
         public async Task<IActionResult> KGC(KGCViewModel KGC)
         {
             if (ModelState.IsValid)
@@ -219,6 +224,7 @@ public IActionResult Create(DataholderViewModel DataholderModel)
                 return View("Register");
             }
         }
+
 
 
 

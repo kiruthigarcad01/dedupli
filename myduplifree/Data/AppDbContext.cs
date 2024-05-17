@@ -31,7 +31,5 @@ namespace myduplifree.Data
         // public DbSet<UploadfileViewModel> Uploadfile { get; set; }
     }
 
-    public class cloudfilesViewModel
-    {
-    }
+    
 }

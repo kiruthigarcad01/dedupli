@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("myduplifree")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02dc28b17bca989f169d7807adba5f33f5cc6931")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f54e64e5818976ef6852b47a6bebc797c214f53")]
 [assembly: System.Reflection.AssemblyProductAttribute("myduplifree")]
 [assembly: System.Reflection.AssemblyTitleAttribute("myduplifree")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

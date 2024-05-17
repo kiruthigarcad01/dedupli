@@ -6,16 +6,16 @@
 }
 
  
-                            <h1>Course List </h1>
+                            @* <h1>KGC file </h1>
                
                             <table class="table ">
                             <thead class="text-white">
                                 <tr>
-                                <th></th>
-                                <th>Course Name</th>
-                                <th>Course Duration</th>
-                                <th>Course Description</th>
-                                <th>Trainer Name</th>
+                                <th>FileName</th>
+                                <th>FileLocation</th>
+                                <th>Publickey</th>
+                                <th>Updatedto</th>
+                                <th>Youarein</th>
                                 </tr>
                             </thead>
                             <tbody class="text-warning">
@@ -28,11 +28,33 @@
                                 <td>@KGC.Publickey</td>
                                 <td>@KGC.Updatedto</td>
                                 <td>@KGC.Youarein</td>
-                                @* <td><img src="@course.trainer_name" width="50px"  alt=""></td> *@
                                 
                                 
                                 </tr>
                                 }
                             </tbody>
                             </table>
-
+  *@
+<table class="table">
+    <thead class="text-white">
+        <tr>
+            <th>FileName</th>
+            <th>FileLocation</th>
+            <th>Publickey</th>
+            <th>Updatedto</th>
+            <th>Youarein</th>
+        </tr>
+    </thead>
+    <tbody class="text-warning">
+        @foreach (var KGC in Model)
+        {
+            <tr>
+                <td>@KGC.FileName</td>
+                <td>@KGC.FileLocation</td>
+                <td>@KGC.Publickey</td>
+                <td>@KGC.Updatedto</td>
+                <td>@KGC.Youarein</td>
+            </tr>
+        }
+    </tbody>
+</table>
