@@ -1,0 +1,112 @@
+﻿@* @{
+    ViewData["Title"] = "cloud files";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+
+@model kgc.Models.cloudfilesViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cloud Files</title>
+</head>
+<body>
+    <h1>Cloud Files Form</h1>
+    
+    @using (Html.BeginForm("cloudfiles", "Home", FormMethod.Post))
+    {
+        <div>
+            @Html.LabelFor(model => model.Username)
+            @Html.TextBoxFor(model => model.Username)
+            @Html.ValidationMessageFor(model => model.Username)
+        </div>
+        
+        <div>
+            @Html.LabelFor(model => model.Email)
+            @Html.TextBoxFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+        
+        <div>
+            @Html.LabelFor(model => model.PhoneNumber)
+            @Html.TextBoxFor(model => model.PhoneNumber)
+            @Html.ValidationMessageFor(model => model.PhoneNumber)
+        </div>
+        
+        <div>
+            @Html.LabelFor(model => model.CSP)
+            @Html.TextBoxFor(model => model.CSP)
+            @Html.ValidationMessageFor(model => model.CSP)
+        </div>
+        
+        <div>
+            @Html.LabelFor(model => model.Generate_Keys)
+            @Html.TextBoxFor(model => model.Generate_Keys)
+            @Html.ValidationMessageFor(model => model.Generate_Keys)
+        </div>
+        
+        <button type="submit">Submit</button>
+    }
+</body>
+</html> *@
+
+
+@model kgc.Models.cloudfilesViewModel
+
+@{
+    ViewBag.Title = "Cloud Files";
+}
+
+
+<body>
+    <div class="container">
+        <h1>Cloud Files Form</h1>
+        
+        @using (Html.BeginForm("cloudfiles", "Home", FormMethod.Post, new { @class = "row g-3" }))
+        {
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+            </div>
+            
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+            
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.PhoneNumber, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "text-danger" })
+            </div>
+            
+            <div class="col-md-6">
+                @Html.LabelFor(model => model.CSP, htmlAttributes: new { @class = "form-label" })
+                @Html.TextBoxFor(model => model.CSP, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CSP, "", new { @class = "text-danger" })
+            </div>
+            
+            <div class="col-md-6">
+<div class="col-md-6">
+    @Html.LabelFor(model => model.Generate_Keys, "Generate Keys", new { @class = "form-label" })
+    @Html.TextBoxFor(model => model.Generate_Keys) <!-- Assuming Generate_Keys is a boolean property -->
+    @Html.ValidationMessageFor(model => model.Generate_Keys, "", new { @class = "text-danger" })
+</div>
+
+
+
+            </div>
+            
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        }
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

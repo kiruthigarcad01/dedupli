@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Data Deduplication</title>
+  <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+  <header>
+    <h1>Cloud Data Deduplication System</h1>
+    <!-- Navigation menu could be here -->
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <h2>Upload Files</h2>
+      <form id="upload-form">
+        <input type="file" id="file-input" multiple>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <section class="deduplication-section">
+      <h2>Deduplicated Files</h2>
+      <ul id="deduplicated-files-list">
+        <!-- List of deduplicated files will be dynamically populated here -->
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Cloud Data Deduplication System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

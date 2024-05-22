@@ -1,0 +1,60 @@
+@model List<myduplifree.Models.KGCViewModel>
+
+@{
+    ViewData["Title"]="KGC Page";
+   
+}
+
+ 
+                            @* <h1>KGC file </h1>
+               
+                            <table class="table ">
+                            <thead class="text-white">
+                                <tr>
+                                <th>FileName</th>
+                                <th>FileLocation</th>
+                                <th>Publickey</th>
+                                <th>Updatedto</th>
+                                <th>Youarein</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-warning">
+
+                                @foreach (var KGC in Model)
+                               {
+                                <tr>
+                                <td>@KGC.FileName</td>
+                                <td>@KGC.FileLocation</td>
+                                <td>@KGC.Publickey</td>
+                                <td>@KGC.Updatedto</td>
+                                <td>@KGC.Youarein</td>
+                                
+                                
+                                </tr>
+                                }
+                            </tbody>
+                            </table>
+  *@
+<table class="table">
+    <thead class="text-white">
+        <tr>
+            <th>FileName</th>
+            <th>FileLocation</th>
+            <th>Publickey</th>
+            <th>Updatedto</th>
+            <th>Youarein</th>
+        </tr>
+    </thead>
+    <tbody class="text-warning">
+        @foreach (var KGC in Model)
+        {
+            <tr>
+                <td>@KGC.FileName</td>
+                <td>@KGC.FileLocation</td>
+                <td>@KGC.Publickey</td>
+                <td>@KGC.Updatedto</td>
+                <td>@KGC.Youarein</td>
+            </tr>
+        }
+    </tbody>
+</table>

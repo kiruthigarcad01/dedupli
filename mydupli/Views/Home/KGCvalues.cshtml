@@ -1,0 +1,39 @@
+@model IEnumerable<mydupli.Models.KGCvaluesViewModel>
+
+@{
+    ViewData["Title"] = "KGCvalues";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserID</th>
+            <th>FileName</th>
+            <th>Size</th>
+            <th>Format</th>
+            <th>StoragePath</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var KGCvalues in Model)
+    {
+        <tr>
+            <td>@KGCvalues.UserID</td>
+            <td>@KGCvalues.FileName</td>
+            <td>@KGCvalues.Size</td>
+            <td>@KGCvalues.Format</td>
+            <td>@KGCvalues.StoragePath</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@KGCvalues.UserID" class="btn btn-secondary">Edit</a>
+                <a asp-action="Delete" asp-route-id="@KGCvalues.UserID" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
