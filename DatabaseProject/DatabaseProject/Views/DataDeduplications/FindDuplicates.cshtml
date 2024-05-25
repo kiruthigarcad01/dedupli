@@ -1,0 +1,28 @@
+﻿@model List<DatabaseProject.Models.DataDeduplication>
+
+@{
+    ViewData["Title"] = "Duplicate Records";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var duplicate in Model)
+        {
+            <tr>
+                <td>@duplicate.Id</td>
+                <td>@duplicate.Name</td>
+                <td>@duplicate.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

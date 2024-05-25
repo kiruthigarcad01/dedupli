@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\datadeduplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\datadeduplicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\models\\datadeduplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\models\\datadeduplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\views\\duplicaterecords.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\views\\duplicaterecords.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\views\\datadeduplications\\findduplicates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\views\\datadeduplications\\findduplicates.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\databaseproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\databaseproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\models\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\models\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\migrations\\20240525062817_first migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\migrations\\20240525062817_first migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\data\\databaseprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\data\\databaseprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|c:\\users\\hp\\desktop\\databaseproject\\databaseproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DFB330A3-43E8-4C51-A012-813D5A31F551}|DatabaseProject\\DatabaseProject.csproj|solutionrelative:databaseproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FindDuplicates.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Views\\DataDeduplications\\FindDuplicates.cshtml",
+              "RelativeDocumentMoniker": "DatabaseProject\\Views\\DataDeduplications\\FindDuplicates.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Views\\DataDeduplications\\FindDuplicates.cshtml",
+              "RelativeToolTip": "DatabaseProject\\Views\\DataDeduplications\\FindDuplicates.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T07:22:42.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DuplicateRecords.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Views\\DuplicateRecords.cshtml",
+              "RelativeDocumentMoniker": "DatabaseProject\\Views\\DuplicateRecords.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Views\\DuplicateRecords.cshtml",
+              "RelativeToolTip": "DatabaseProject\\Views\\DuplicateRecords.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T07:20:43.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Models\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Models\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Models\\DbInitializer.cs",
+              "RelativeToolTip": "DatabaseProject\\Models\\DbInitializer.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAYwB0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:47:55.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240525062817_First Migration.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Migrations\\20240525062817_First Migration.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Migrations\\20240525062817_First Migration.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Migrations\\20240525062817_First Migration.cs",
+              "RelativeToolTip": "DatabaseProject\\Migrations\\20240525062817_First Migration.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAkwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:28:17.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseProjectContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Data\\DatabaseProjectContext.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Data\\DatabaseProjectContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Data\\DatabaseProjectContext.cs",
+              "RelativeToolTip": "DatabaseProject\\Data\\DatabaseProjectContext.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAiwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:20:49.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\appsettings.json",
+              "RelativeDocumentMoniker": "DatabaseProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\appsettings.json",
+              "RelativeToolTip": "DatabaseProject\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-25T06:15:02.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Program.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Program.cs",
+              "RelativeToolTip": "DatabaseProject\\Program.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:14:52.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataDeduplicationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\DataDeduplicationsController.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\DataDeduplicationsController.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\DataDeduplicationsController.cs",
+              "RelativeToolTip": "DatabaseProject\\DataDeduplicationsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:14:34.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataDeduplication.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Models\\DataDeduplication.cs",
+              "RelativeDocumentMoniker": "DatabaseProject\\Models\\DataDeduplication.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\Models\\DataDeduplication.cs",
+              "RelativeToolTip": "DatabaseProject\\Models\\DataDeduplication.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T06:03:57.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseProject.csproj",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\DatabaseProject.csproj",
+              "RelativeDocumentMoniker": "DatabaseProject\\DatabaseProject.csproj",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\DatabaseProject\\DatabaseProject\\DatabaseProject.csproj",
+              "RelativeToolTip": "DatabaseProject\\DatabaseProject.csproj",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-25T06:00:55.261Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
