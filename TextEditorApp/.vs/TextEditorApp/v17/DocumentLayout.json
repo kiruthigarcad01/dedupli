@@ -1,0 +1,235 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\controllers\\docscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\controllers\\docscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\views\\docs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\views\\docs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\views\\docs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\views\\docs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\views\\docs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\views\\docs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\views\\docs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\views\\docs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\models\\doc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\models\\doc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\texteditorapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\texteditorapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\texteditorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\texteditorapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|c:\\users\\hp\\desktop\\texteditorapp\\texteditorapp\\data\\migrations\\20240531102741_intial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEC859DA-D988-4F39-9BAE-E2016E0FE0D7}|TextEditorApp\\TextEditorApp.csproj|solutionrelative:texteditorapp\\data\\migrations\\20240531102741_intial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Index.cshtml",
+              "RelativeDocumentMoniker": "TextEditorApp\\Views\\Docs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Index.cshtml",
+              "RelativeToolTip": "TextEditorApp\\Views\\Docs\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T10:48:03.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TextEditorApp\\Views\\Docs\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Delete.cshtml",
+              "RelativeToolTip": "TextEditorApp\\Views\\Docs\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T07:31:58.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TextEditorApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TextEditorApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T12:08:56.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TextEditorApp\\Views\\Docs\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Edit.cshtml",
+              "RelativeToolTip": "TextEditorApp\\Views\\Docs\\Edit.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAgwBoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T11:17:16.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Create.cshtml",
+              "RelativeDocumentMoniker": "TextEditorApp\\Views\\Docs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Views\\Docs\\Create.cshtml",
+              "RelativeToolTip": "TextEditorApp\\Views\\Docs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T11:16:40.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DocsController.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Controllers\\DocsController.cs",
+              "RelativeDocumentMoniker": "TextEditorApp\\Controllers\\DocsController.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Controllers\\DocsController.cs",
+              "RelativeToolTip": "TextEditorApp\\Controllers\\DocsController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwB4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T11:12:55.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Program.cs",
+              "RelativeDocumentMoniker": "TextEditorApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Program.cs",
+              "RelativeToolTip": "TextEditorApp\\Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T10:17:40.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TextEditorApp\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TextEditorApp\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T10:14:05.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Doc.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Models\\Doc.cs",
+              "RelativeDocumentMoniker": "TextEditorApp\\Models\\Doc.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Models\\Doc.cs",
+              "RelativeToolTip": "TextEditorApp\\Models\\Doc.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T09:55:20.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TextEditorApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\TextEditorApp.csproj",
+              "RelativeDocumentMoniker": "TextEditorApp\\TextEditorApp.csproj",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\TextEditorApp.csproj",
+              "RelativeToolTip": "TextEditorApp\\TextEditorApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T11:20:03.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TextEditorApp",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\TextEditorApp.csproj",
+              "RelativeDocumentMoniker": "TextEditorApp\\TextEditorApp.csproj",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\TextEditorApp.csproj",
+              "RelativeToolTip": "TextEditorApp\\TextEditorApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-31T11:20:07.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\appsettings.json",
+              "RelativeDocumentMoniker": "TextEditorApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\appsettings.json",
+              "RelativeToolTip": "TextEditorApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-31T10:20:56.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240531102741_Intial.cs",
+              "DocumentMoniker": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Data\\Migrations\\20240531102741_Intial.cs",
+              "RelativeDocumentMoniker": "TextEditorApp\\Data\\Migrations\\20240531102741_Intial.cs",
+              "ToolTip": "C:\\Users\\Hp\\Desktop\\TextEditorApp\\TextEditorApp\\Data\\Migrations\\20240531102741_Intial.cs",
+              "RelativeToolTip": "TextEditorApp\\Data\\Migrations\\20240531102741_Intial.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAowC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T10:27:41.57Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
