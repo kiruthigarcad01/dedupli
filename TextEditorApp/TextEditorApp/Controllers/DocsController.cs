@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
@@ -25,20 +26,20 @@ namespace TextEditorApp.Controllers
         // GET: Docs
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = from c in _context.Docs
-                                        select c;
-            ApplicationDbContext= ApplicationDbContext.where
-            return View(await applicationDbContext.ToListAsync());
+            var ApplicationDbContext = from c in _context.Docs 
+                                       select c;
+            ApplicationDbContext = ApplicationDbContext.Where(a => a.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier));
+            return View(await ApplicationDbContext.Include (d => d.User).ToListAsync());
         }
 
-       
-       
+
+
 
         // GET: Docs/Create
         public IActionResult Create()
         {
 
-            
+
             return View();
         }
 
@@ -55,11 +56,11 @@ namespace TextEditorApp.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-           
+
             return View(doc);
         }
 
-        
+
         // GET: Docs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -133,7 +134,7 @@ namespace TextEditorApp.Controllers
                 return NotFound();
             }
 
-            
+
             if (doc.UserId != User.FindFirstValue(ClaimTypes.NameIdentifier))
             {
                 return NotFound();
@@ -156,6 +157,10 @@ namespace TextEditorApp.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+
+
 
         private bool DocExists(int id)
         {
