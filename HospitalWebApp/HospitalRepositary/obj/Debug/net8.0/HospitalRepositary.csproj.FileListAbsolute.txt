@@ -1,0 +1,14 @@
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\bin\Debug\net8.0\HospitalRepositary.deps.json
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\bin\Debug\net8.0\HospitalRepositary.runtimeconfig.json
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\bin\Debug\net8.0\HospitalRepositary.dll
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\bin\Debug\net8.0\HospitalRepositary.pdb
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.csproj.AssemblyReference.cache
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.AssemblyInfo.cs
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.dll
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\refint\HospitalRepositary.dll
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.pdb
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\HospitalRepositary.genruntimeconfig.cache
+C:\Users\Hp\Desktop\HospitalWebApp\HospitalRepositary\obj\Debug\net8.0\ref\HospitalRepositary.dll
